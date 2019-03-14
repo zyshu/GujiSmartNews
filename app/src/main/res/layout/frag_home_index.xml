@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/swipe_refresh_header"
+            layout="@layout/layout_mtwm_header"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:clipToPadding="false" />
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+       <!-- <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.jcodecraeer.xrecyclerview.XRecyclerView
+                    android:id="@+id/swipe_target"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+               &lt;!&ndash; <android.support.v7.widget.RecyclerView
+                    android:id="@+id/swipe_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />&ndash;&gt;
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>-->
+
+  <!--  </com.cnews.cloudnews.smart.helper.headerview.HeaderView>-->
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+       <!-- <android.support.design.widget.TabLayout
+            android:id="@+id/tl_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            app:elevation="0dp" />
+
+
+        <TextView
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:visibility="gone" />
+        <!-- <android.support.v7.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:background="@android:color/transparent"
+             toolbar:title="宠爱"
+             toolbar:titleTextColor="@color/white"
+             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+    </LinearLayout>
+    <!--一个悬浮的按钮控件FAB-->
+    <!--     app:layout_anchor="@id/swipeToLoadLayout"
+        app:layout_anchorGravity="bottom|right"-->
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fbToTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        app:backgroundTint="@color/red"
+        app:rippleColor="#e7aa59"
+        app:elevation="0dp"
+        app:pressedTranslationZ="1dp"
+        app:fabSize="mini"
+        app:borderWidth="0dp"
+        android:scaleType="center"
+        android:src="@drawable/icon_totop_24x24"/>-->
+
+    <ImageButton
+        android:id="@+id/fbToTop"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/icon_totop"/>
+</RelativeLayout>
+
+
