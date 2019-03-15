@@ -57,7 +57,7 @@ public class GJSettingActivity extends BaseActivity {
                 break;
             case R.id.ll_version:
                 ToastUitl.showShort("已是最新版本");
-                CrashReport.testJavaCrash();
+//                CrashReport.testJavaCrash();
                 break;
             //加入QQ群
             case R.id.tv_contact:
