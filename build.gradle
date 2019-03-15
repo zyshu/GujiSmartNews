@@ -46,4 +46,8 @@ ext{
     converterGson = '2.1.0'
     okhttp = '3.5.0'
     frescoVersion = '0.12.0'
+
+    buglyCrashreport = '2.1.9'
+    nativecrashreport = '3.0'
+    buglyTinkersupport = '1.0.4'
 }

@@ -316,8 +316,12 @@ public class FrontNewsMainFragment extends BaseFragment {
 
 
     public void setTvTitleBackgroundColor(@ColorInt int color) {
-        llMagicIndicator.setBackgroundColor(color);
-        mFakeStatusBar.setBackgroundColor(color);
+        try {
+            llMagicIndicator.setBackgroundColor(color);
+            mFakeStatusBar.setBackgroundColor(color);
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
     }
 
 

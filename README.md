@@ -1,4 +1,4 @@
-## GujiSmartNews
+# GujiSmartNews
 
 咕唧新闻平台V1.3.0
 旨在做一款多类型阅读体验优美的新闻资讯的平台
@@ -9,16 +9,16 @@
 开源只为共同学习，请勿商用。问题或者指正请EMAIL:maiduoduo0@163.com
 
 
-####目前已完成的或者正在完成功能模块有：
+## 目前已完成的或者正在完成功能模块有：
 
-	## 启动页
+   ####  启动页
 	
 		-广告：动态、静态。目前支持GIF形式动态广告和静态图文广告
 		-静态图闻
 		-应用宣传页
 		
 
-	## 主页
+   ####  主页
 	
 		-底部导航搭建  SlidingTabLayout + ViewPager +Fragment
 		-推荐、要闻、视频、娱乐、体育等  TabLayout + Fragment + ViewPager
@@ -31,7 +31,7 @@
 		-等（详见图片）
 
 
-	## 要闻
+   ####  要闻
 	
 		-要闻 新闻预测，猜猜猜，等待揭晓。赢取咕唧币。
 		-我的要闻
@@ -41,7 +41,7 @@
 		
 	
 
-	## 视频
+   ####  视频
 	
 		-推荐
 		-搞笑
@@ -54,7 +54,7 @@
 		-列表滑动距离范围，Item不可见播控停止，释放资源。
 		-小窗模式
 	
-	## 关注
+   ####  关注
 	
 		-头像、基本信息
 		-折叠开窗列表联动效果
@@ -66,8 +66,10 @@
 		-我的服务
 		-等
 		
-	## 新闻精选
-	## 新闻详情
+   ####  新闻精选
+   ####  新闻详情
+   
+   
 	 
 #### 技术要点(感谢项目中用到的开源框架开发者或开源机构)
 
@@ -89,16 +91,15 @@
 		-Fresco FaceBook开源图片框架
 		-等
 		-其中使用的三方开源框架（后期会细化整理所有项目使用到的开源框架）
-		
-		
+				
 
-#### 其他板块
+####  其他板块
 		-分享app
 		-拉起QQ分享
 		-设置
 		等
 
-#### 后续要完成
+####  后续要完成
 
 		- 新闻不同板块
 		- 频道动态定制与首页联动
@@ -111,7 +112,7 @@
 		- 消息推送  消息详情
 		等，敬请期待
 
-#### 其中使用的三方开源框架（这里部分列举，后期会细化整理所有项目使用到的开源框架）
+####  其中使用的三方开源框架（这里部分列举，后期会细化整理所有项目使用到的开源框架）
 		  -BaseQuickAdapter
 		  -Glide
 		  -Fresco
@@ -127,10 +128,7 @@
 		  -感谢开源，感谢项目中的开源方
 		  
 		  
-		  
-		  
-	
-
+		  		 	
 #### 环境
 		 -AndroidStudio3.2
 			-Android Studio 3.2
@@ -140,6 +138,7 @@
 			Windows 10 10.0
 		-SVN
 		_gradle构建：gradle-4.6-all.zip
+		
   
 #### 声明
 
@@ -148,69 +147,53 @@
 	# 如果项目中引入框架或者数据上有侵范行为，请联系我删除。Email:maiduoduo0@163.com
 	
 	# 感谢开源及开发性环境，才能使技术越走越远，内容越来越丰富，越来越规范。
-
-### 宠爱商城LOGO 
-	![image](img/app_news_logo.png)
-	
-	##个人设计，请勿他用
 	
 	
 	
 
-### 宠爱商城运行效果展示
+###  咕唧新闻平台LOGO 
+![image](img/app_news_logo.png)
+	
+ #### 个人设计，请勿他用
+ 
+ <br>
+	
+	
+	
+
+### 咕唧新闻平台运行效果展示
 
 ![image](img/a.jpg)
-
 ![image](img/b.jpg)
-
 ![image](img/c.jpg)
 
 ![image](img/d.jpg)
-
 ![image](img/e.jpg)
-
 ![image](img/f.jpg)
 
 ![image](img/g.jpg)
-
 ![image](img/h.jpg)
-
 ![image](img/i.jpg)
 
 ![image](img/j.jpg)
-
 ![image](img/k.jpg)
-
 ![image](img/l.jpg)
 
 ![image](img/m.jpg)
-
 ![image](img/n.jpg)
-
 ![image](img/o.jpg)
-
 ![image](img/p.jpg)
 
 ![image](img/q.jpg)
-
 ![image](img/r.jpg)
-
 ![image](img/s.jpg)
-
 ![image](img/t.jpg)
-
 ![image](img/u.jpg)
-
 ![image](img/v.jpg)
-
 ![image](img/w.jpg)
-
 ![image](img/x.jpg)
-
 ![image](img/y.jpg)
-
 ![image](img/z.jpg)
-
 ![image](img/aa.jpg)
 ![image](img/bb.jpg)
 ![image](img/cc.jpg)
@@ -233,7 +216,7 @@
 
 
 
-####关于LICENSE
+#### 关于LICENSE
 
 	- 咕唧新闻项目只作为平时开发练习及构思交流项目，请勿做其他任何商用。
 	- 咕唧新闻UI设计在参考主流类型平台结合自我设计+框架搭建+数据格式+网络库模式+MVP+业务+功能实现均为个人业余时间实现。
@@ -241,7 +224,7 @@
 	- 若想要转载等请联系我授权。转载请注明出处。互相学习与探讨。有任何问题请联系邮箱。
 
 
-Copyright (C) dingcl, nanjCodeTeam. Open source codes for study only. Do not use for commercial purpose.
+Copyright (C) dingcl, nanjCodeTeam,Inc. Open source codes for study only. Do not use for commercial purpose.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

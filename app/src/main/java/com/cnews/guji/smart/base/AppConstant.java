@@ -3,8 +3,8 @@ package com.cnews.guji.smart.base;
 import com.cnews.guji.smart.api.HostType;
 
 /**
- * author：JSYL-DCL
  * 全局配置
+ * @author JSYL-DCL
  */
 public class AppConstant {
     public static final String APP_NAME = "";
@@ -19,27 +19,48 @@ public class AppConstant {
     public static final String HOME_MENU_URL_D = "https://img1.epetbar.com/2018-10/19/18/8faa333a45eb95384551b712866e91ff.png@!water";
     public static final String HOME_MENU_URL_E = "https://img1.epetbar.com/2018-10/18/20/806c70e41b42268892244372dfe393f8.png@!water";
     public static final String SPLASH_AD_A = "https://img1.epetbar.com/2017-11/03/14/8bdd96fdb55d98ccd33e380bb035cce4.jpg";
-    //要闻_TEMP
+    /**
+     * 要闻_TEMP
+     */
     public static final String FRONT_TOP_IMAGE_URL = "http://p.cdn.sohu.com/570d99e4/f11c20f6088243216710891bb3fcb229.jpeg";
     public static final String FRONT_TOP_IMAGE_URL1 = "http://p.cdn.sohu.com/570d99e4/95db07f938470bb2aa70fc97bc88ca70.jpeg";
-    //热闻传值标记
+    /**
+     * 热闻传值标记
+     */
     public static final int HOT_NEWS_PARAMVALUE_TOP = 0x001024;
     public static final int HOT_NEWS_PARAMVALUE_TOP1 = 0x001025;
     public static final int HOT_NEWS_PARAMVALUE_TOP2 = 0x001025;
     public static final int HOT_NEWS_PARAMVALUE_TOP3 = 0x001026;
-    //要闻状态标记
+    /**
+     * 要闻状态标记
+     */
     public static final int FRONT_NEWS_RIGHT_BOTTOM_RIGHTNOW = 0;
     public static final int FRONT_NEWS_WAIT_PUBLISH = 1;
     public static final int FRONT_NEWS_ALRIGHT_PUBLISH = 2;
 
     public static final String JSON_API_DATA = "app_data";
+    /**
+     * BUGLY_APPID
+     */
+    public static String APPLICATION_BUGLY_APPID = "6859d0b061";
 
-    //下拉刷新数据状态
+    /**
+     * UMENG_APPKEY
+     */
+    public static  String APPLICATION_UMENG_APPKEY = "5c8b40a00cafb200d2001182";
+
+    /**
+     * 下拉刷新数据状态
+     */
     public static  final int SUCCESS = 1;
     public static  final int FAILED = 0;
-    //启动页GIF 与 Ad静态图切换标记
+    /**
+     * 启动页GIF 与 Ad静态图切换标记
+     */
     public static  boolean START_GIF = true;
-    //倒计时状态控制
+    /**
+     * 倒计时状态控制
+     */
     public static  boolean COUNTDOWN_TIMER = true;
 
     public static final String CHANNEL_SWAP = "CHANNEL_SWAP";

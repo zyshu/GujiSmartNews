@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.Window;
 
 import com.cnews.guji.smart.R;
@@ -15,13 +16,14 @@ import com.cnews.guji.smart.helper.LoadingDialog;
 import com.cnews.guji.smart.util.ToastUitl;
 import com.cnews.guji.smart.util.daynightmodeutils.ChangeModeController;
 import com.jaeger.library.StatusBarUtil;
+import com.umeng.analytics.MobclickAgent;
 
 import butterknife.ButterKnife;
 
 /**
  * Activity基类
+ * @author JSYL-DCL
  */
-/***************使用例子*********************/
 public abstract class BaseActivity extends AppCompatActivity {
     public Context mContext;
     private boolean isConfigChange = false;
@@ -75,7 +77,9 @@ public abstract class BaseActivity extends AppCompatActivity {
     //获取布局文件
     public abstract int getLayoutId();
 
-    //简单页面无需mvp就不用管此方法即可,完美兼容各种实际场景的变通
+    /**
+     * 简单页面无需mvp就不用管此方法即可,完美兼容各种实际场景的变通
+     */
     public abstract void initPresenter();
     public abstract void initData();
     public abstract void initListener();
@@ -217,11 +221,13 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        MobclickAgent.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        MobclickAgent.onPause(this);
     }
 
     @Override

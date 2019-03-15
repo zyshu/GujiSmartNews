@@ -8,24 +8,53 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
+import android.text.TextUtils;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.core.ImagePipeline;
+import com.tencent.bugly.crashreport.CrashReport;
+import com.umeng.commonsdk.UMConfigure;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.lang.reflect.Field;
+
+import static com.cnews.guji.smart.base.AppConstant.APPLICATION_BUGLY_APPID;
+import static com.cnews.guji.smart.base.AppConstant.APPLICATION_UMENG_APPKEY;
 
 /**
  * APPLICATION
+ * @author JSYL-DCL
  */
 public class BaseApplication extends Application {
     private static BaseApplication sInstance;
     private Typeface mtypeface;
-    protected static Context context;//上下文
-    protected static Handler handler;//主线程Handler
-    private static Handler mHandler;//主线程Handler
-    private static Thread mMainThread;//主线程
-    private static long mMainThreadId;//主线程id
-    private static Looper mMainLooper;//循环队列
+    /**
+     * 上下文
+     */
+    protected static Context context;
+    /**
+     * 主线程Handler
+     */
+    protected static Handler handler;
+    /**
+     * 主线程Handler
+     */
+    private static Handler mHandler;
+    /**
+     * 主线程
+     */
+    private static Thread mMainThread;
+
+    /**
+     * 主线程id
+     */
+    private static long mMainThreadId;
+    /**
+     * 循环队列
+     */
+    private static Looper mMainLooper;
 
     @Override
     public void onCreate() {
@@ -38,6 +67,11 @@ public class BaseApplication extends Application {
         Fresco.initialize(this);
         mMainThread = Thread.currentThread();
         mMainThreadId = android.os.Process.myTid();
+
+
+        //bugly  init
+        getBuglyProcess();
+        initUmeng();
     }
 
     public static Context getAppContext() {
@@ -169,6 +203,64 @@ public class BaseApplication extends Application {
     public static void frescoClearMem(){
         ImagePipeline imagePipeline = Fresco.getImagePipeline();
         imagePipeline.clearCaches();
+    }
+
+    private void initUmeng() {
+        /**
+         * 初始化common库
+         * 参数1:上下文，必须的参数，不能为空
+         * 参数2:友盟 app key，非必须参数，如果Manifest文件中已配置app key，该参数可以传空，则使用Manifest中配置的app key，否则该参数必须传入
+         * 参数3:友盟 channel，非必须参数，如果Manifest文件中已配置channel，该参数可以传空，则使用Manifest中配置的channel，否则该参数必须传入，channel命名请详见channel渠道命名规范
+         * 参数4:设备类型，必须参数，传参数为UMConfigure.DEVICE_TYPE_PHONE则表示手机；传参数为UMConfigure.DEVICE_TYPE_BOX则表示盒子；默认为手机
+         * 参数5:Push推送业务的secret，需要集成Push功能时必须传入Push的secret，否则传空
+         * 注意：一定要在主进程进行该项操作，如果您使用到PUSH，还需在推送进程（channel进程）同样进行该项操作
+         */
+        //如果AndroidManifest.xml清单配置中没有设置appkey和channel，则可以在这里设置
+        UMConfigure.init(this, UMConfigure.DEVICE_TYPE_PHONE, APPLICATION_UMENG_APPKEY);
+    }
+
+    private void getBuglyProcess() {
+        Context context = getApplicationContext();
+        // 获取当前包名
+        String packageName = context.getPackageName();
+        // 获取当前进程名
+        String processName = getProcessName(android.os.Process.myPid());
+        // 设置是否为上报进程
+        CrashReport.UserStrategy strategy = new CrashReport.UserStrategy(context);
+        strategy.setBuglyLogUpload(processName == null || processName.equals(packageName));
+        // 初始化Bugly
+        CrashReport.initCrashReport(getApplicationContext(), APPLICATION_BUGLY_APPID, false);
+        // 如果通过“AndroidManifest.xml”来配置APP信息，初始化方法如下
+        // CrashReport.initCrashReport(context, strategy);
+    }
+
+    /**
+     * 获取进程号对应的进程名
+     *
+     * @param pid 进程号
+     * @return 进程名
+     */
+    private static String getProcessName(int pid) {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader("/proc/" + pid + "/cmdline"));
+            String processName = reader.readLine();
+            if (!TextUtils.isEmpty(processName)) {
+                processName = processName.trim();
+            }
+            return processName;
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        } finally {
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException exception) {
+                exception.printStackTrace();
+            }
+        }
+        return null;
     }
 
 

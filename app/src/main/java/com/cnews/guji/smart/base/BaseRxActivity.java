@@ -19,6 +19,7 @@ import com.cnews.guji.smart.util.TUtil;
 import com.cnews.guji.smart.util.ToastUitl;
 import com.cnews.guji.smart.util.daynightmodeutils.ChangeModeController;
 import com.jaeger.library.StatusBarUtil;
+import com.umeng.analytics.MobclickAgent;
 
 import butterknife.ButterKnife;
 
@@ -281,11 +282,13 @@ public abstract class BaseRxActivity<T extends BaseRxPresenter, E extends BaseMo
     @Override
     protected void onResume() {
         super.onResume();
+        MobclickAgent.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        MobclickAgent.onPause(this);
     }
 
     @Override

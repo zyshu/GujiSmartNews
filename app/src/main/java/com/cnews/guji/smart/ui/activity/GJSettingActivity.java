@@ -16,6 +16,7 @@ import com.cnews.guji.smart.base.BaseActivity;
 import com.cnews.guji.smart.common.bean.AppNettyData;
 import com.cnews.guji.smart.util.AppCommonUtils;
 import com.cnews.guji.smart.util.ToastUitl;
+import com.tencent.bugly.crashreport.CrashReport;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -56,29 +57,34 @@ public class GJSettingActivity extends BaseActivity {
                 break;
             case R.id.ll_version:
                 ToastUitl.showShort("已是最新版本");
+                CrashReport.testJavaCrash();
                 break;
+            //加入QQ群
             case R.id.tv_contact:
                 if (!TextUtils.isEmpty(AppConstant.QQ_KEY)) {
-                    BaseApplication.joinQQGroup(mContext, AppConstant.QQ_KEY);//加入QQ群
+                    BaseApplication.joinQQGroup(mContext, AppConstant.QQ_KEY);
                 }
                 break;
             case R.id.tv_clear:
                 showShortToast("缓存清理成功");
                 break;
-            case R.id.tv_download://复制下载地址
+            //复制下载地址
+            case R.id.tv_download:
                 download = AppConstant.DOWNLOAD_URL;
                 if (!TextUtils.isEmpty(download)) {
                     ClipboardManager myClipboard;
                     myClipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                     ClipData myClip;
-                    myClip = ClipData.newPlainText("text", download);//text是内容
+                    //text是内容
+                    myClip = ClipData.newPlainText("text", download);
                     myClipboard.setPrimaryClip(myClip);
                     ToastUitl.showShort("下载链接已复制，去浏览器粘贴打开，或发送给好友！");
                 }
                 break;
+            default:
+                break;
         }
     }
-
 
 
     @Override
