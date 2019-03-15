@@ -279,7 +279,10 @@ public class FrontNewsMainFragment extends BaseFragment {
             public IPagerIndicator getIndicator(Context context) {
                 LinePagerIndicator indicator = new LinePagerIndicator(context);
                 indicator.setMode(LinePagerIndicator.MODE_EXACTLY);
-                indicator.setLineHeight(UIUtil.dip2px(context, 3)); //  指示器的高度
+                /**
+                 * 指示器的高度
+                 */
+                indicator.setLineHeight(UIUtil.dip2px(context, 3));
                 indicator.setLineWidth(UIUtil.dip2px(context, 10)); //  指示器的宽度
                 indicator.setRoundRadius(UIUtil.dip2px(context, 3));//  指示器的圆角
                 indicator.setStartInterpolator(new AccelerateInterpolator());

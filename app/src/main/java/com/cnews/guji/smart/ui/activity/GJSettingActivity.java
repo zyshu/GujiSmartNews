@@ -56,6 +56,7 @@ public class GJSettingActivity extends BaseActivity {
                 startActivity(new Intent(this, GJAboutActivity.class));
                 break;
             case R.id.ll_version:
+//                ToastUitl.showShort("已是最新版本");
                 ToastUitl.showShort("已是最新版本");
 //                CrashReport.testJavaCrash();
                 break;
