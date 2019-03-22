@@ -1,6 +1,6 @@
 # GujiSmartNews
 
-&#10084;咕唧新闻平台V1.3.0
+&#10084;咕唧新闻平台V1.3.0&#10084;
 旨在做一款多类型阅读体验优美的新闻资讯的平台
 首页精选分类性的新闻专区，包含图文、音视频、图文、导航入口、新闻直击阅读
 可以随时随地加入新闻猜猜猜，专区内置咕唧币，更多权限，更多玩法
@@ -124,14 +124,14 @@
 		  
 		  		 	
 #### 环境
-		* AndroidStudio3.2
+		&#10084;AndroidStudio3.2
 			- Android Studio 3.2
 			    Build #AI-181.5540.7.32.5014246, built on September 18, 2018
 			JRE: 1.8.0_152-release-1136-b06 amd64
 			JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
 			Windows 10 10.0
-		* SVN
-		* _gradle构建：gradle-4.6-all.zip
+		&#10084;SVN
+		&#10084;_gradle构建：gradle-4.6-all.zip
 		
   
 #### 声明
@@ -207,7 +207,7 @@
 		  - 希望在日后静好岁月也好，波澜狂暴也好，坚持自我本心，热爱及热衷自己想要做的事情，追逐十七岁你最直击心底的那个信念
 		  - 在座的一直发财，一直暴富，成为各个领域的大牛。
 		  
-##博客
+&#10084;博客
 
 <a href="http://askunix.top/" target="_blank">CSDN博客传送门</a>
 <a href="https://blog.csdn.net/Maiduoudo" target="_blank">https://blog.csdn.net/Maiduoudo</a>
