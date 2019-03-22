@@ -105,18 +105,18 @@
 ####  其中使用的三方开源框架（这里部分列举，后期会细化整理所有项目使用到的开源框架）
 
 		  
-			| 三方开源框架 | 用途 | 应用版本  |
-			| :-------- | --------:| :--: |
-			| BaseQuickAdapter  | RecyclerView适配器基类 |    |
-			| Glide     |   图片加载策略 |    |
-			| Fresco      |    FaceBook图片加载策略 |  |
-			| butterknife      |    注解 |  |
-			| Retrofit2.0+rxandroid+rxjava+okhttp3      |   网络处理策略 |  |
-			| FlycoTabLayout      |    引导页签 |  |
-			| banner      |    轮播 |  |
-			| SwipeToLoadLayout      |    自定制刷新 |  |
-			| jiaozivideoplayer      |    视频扩展工具 |  |
-			| xrecyclerview      |    定制recyclerview |  |
+|    三方开源框架    |    用途    |    应用版本     |
+| :-------- | --------:| :--: |
+| BaseQuickAdapter  | RecyclerView适配器基类 |    |
+| Glide     |   图片加载策略 |    |
+| Fresco      |    FaceBook图片加载策略 |  |
+| butterknife      |    注解 |  |
+| Retrofit2.0+rxandroid+rxjava+okhttp3      |   网络处理策略 |  |
+| FlycoTabLayout      |    引导页签 |  |
+| banner      |    轮播 |  |
+| SwipeToLoadLayout      |    自定制刷新 |  |
+| jiaozivideoplayer      |    视频扩展工具 |  |
+| xrecyclerview      |    定制recyclerview |  |
 
  	等
    	- 感谢开源，感谢项目中的开源方
