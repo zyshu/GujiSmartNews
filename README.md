@@ -1,12 +1,12 @@
 # GujiSmartNews
 
-*******咕唧新闻平台V1.3.0*******
-###### 旨在做一款多类型阅读体验优美的新闻资讯的平台
-###### 首页精选分类性的新闻专区，包含图文、音视频、图文、导航入口、新闻直击阅读
-###### 可以随时随地加入新闻猜猜猜，专区内置咕唧币，更多权限，更多玩法
-###### 专门视频专区，一次看个够
-###### 个人中心，美观的界面，多类型，丰富的功能设计。设置分享，想看就看。
-###### 开源只为共同学习，请勿商用。问题或者指正请EMAIL:maiduoduo0@163.com
++ 咕唧新闻平台V1.3.0
+旨在做一款多类型阅读体验优美的新闻资讯的平台
+首页精选分类性的新闻专区，包含图文、音视频、图文、导航入口、新闻直击阅读
+可以随时随地加入新闻猜猜猜，专区内置咕唧币，更多权限，更多玩法
+专门视频专区，一次看个够
+个人中心，美观的界面，多类型，丰富的功能设计。设置分享，想看就看。
+开源只为共同学习，请勿商用。问题或者指正请EMAIL:maiduoduo0@163.com
 
 
 ***目前已完成的或者正在完成功能模块有：***
@@ -103,32 +103,20 @@
 * 等，敬请期待
 
 ####  其中使用的三方开源框架（这里部分列举，后期会细化整理所有项目使用到的开源框架）
-* BaseQuickAdapter
-		  -Glide
-		  -Fresco
-		  -butterknife
-		  -Retrofit2.0+rxandroid+rxjava+okhttp3
-		  -FlycoTabLayout_Lib
-		  -glide+fresco
-		  -com.youth.banner:banner
-		  -SwipeToLoadLayout
-		  -jiaozivideoplayer
-		  -xrecyclerview		  
-		  等
-		  -感谢开源，感谢项目中的开源方
+
 		  
-| 三方开源框架 | 用途 | 应用版本  |
-| :-------- | --------:| :--: |
-| BaseQuickAdapter  | RecyclerView适配器基类 |    |
-| Glide     |   图片加载策略 |    |
-| Fresco      |    FaceBook图片加载策略 |  |
-| butterknife      |    注解 |  |
-| Retrofit2.0+rxandroid+rxjava+okhttp3      |   网络处理策略 |  |
-| FlycoTabLayout      |    引导页签 |  |
-| banner      |    轮播 |  |
-| SwipeToLoadLayout      |    自定制刷新 |  |
-| jiaozivideoplayer      |    视频扩展工具 |  |
-| xrecyclerview      |    定制recyclerview |  |
+			| 三方开源框架 | 用途 | 应用版本  |
+			| :-------- | --------:| :--: |
+			| BaseQuickAdapter  | RecyclerView适配器基类 |    |
+			| Glide     |   图片加载策略 |    |
+			| Fresco      |    FaceBook图片加载策略 |  |
+			| butterknife      |    注解 |  |
+			| Retrofit2.0+rxandroid+rxjava+okhttp3      |   网络处理策略 |  |
+			| FlycoTabLayout      |    引导页签 |  |
+			| banner      |    轮播 |  |
+			| SwipeToLoadLayout      |    自定制刷新 |  |
+			| jiaozivideoplayer      |    视频扩展工具 |  |
+			| xrecyclerview      |    定制recyclerview |  |
 
  	等
    	- 感谢开源，感谢项目中的开源方
@@ -218,6 +206,11 @@
 		  - 不想当厨师的码农不是一个合格的老司机。
 		  - 希望在日后静好岁月也好，波澜狂暴也好，坚持自我本心，热爱及热衷自己想要做的事情，追逐十七岁你最直击心底的那个信念
 		  - 在座的一直发财，一直暴富，成为各个领域的大牛。
+		  
+##博客
+
+<a href="http://askunix.top/" target="_blank">CSDN博客传送门</a>
+<a href="https://blog.csdn.net/Maiduoudo" target="_blank">https://blog.csdn.net/Maiduoudo</a>
 
 
 
