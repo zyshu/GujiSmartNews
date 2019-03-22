@@ -51,61 +51,59 @@
 * 头像、基本信息
 * 折叠开窗列表联动效果
 *  设置
-		- 好友、影响力、访客
-		- 个人小窝
-		- 我的钱包
-		- 我的订单
-		- 我的服务
-		- 等
+* 好友、影响力、访客
+* 个人小窝
+* 我的钱包
+* 我的订单
+* 我的服务
+* 等
 		
-   ####  新闻精选
-   ####  新闻详情
+####  新闻精选
+####  新闻详情
    
    
 	 
 #### 技术要点(感谢项目中用到的开源框架开发者或开源机构)
-
-		-沉浸式状态栏
-		-圆角banner
-		-多布局列表、头部、尾部
-		-自定义下拉刷新布局。SwipeToLayout
-		-类某团多页导航菜单，左右滑动，引导圆点
-		-上下新闻条目切换条 -ViewFlipper
-		-圆角图片
-		-新闻详情：TextView加载HTML5内容，HtmlImageLoader+HtmlTagHandler+HtmlText等解析HTML文本和图片进行展示
-		-新闻精选：CoordinatorLayout+AppBarLayout+Toolbar+NestedScrollView实现标题栏的伸缩效果
-		-JZVDPlayer扩展实现视频界面播控，资源状态释放
-		-SwipeToLoadLayout 可定制化刷新布局框架。
-		-注入框架ButterKnife(黄油刀节省了人工时间成本)，快捷键快速注入View,事件监听等
-		-retrofit2+rxjava+mvp等结合对业务及网络数据交换进行开发
-		-FlycoTabLayout_Lib 导航页签快速集成，搭配Viewpager+Fragemnt
-		-glide 图片高效配置及展示
-		-Fresco FaceBook开源图片框架
-		-等
-		-其中使用的三方开源框架（后期会细化整理所有项目使用到的开源框架）
+* 沉浸式状态栏
+* 圆角banner
+* 多布局列表、头部、尾部
+* 自定义下拉刷新布局。SwipeToLayout
+* 类某团多页导航菜单，左右滑动，引导圆点
+* 上下新闻条目切换条 -ViewFlipper
+* 圆角图片
+* 新闻详情：TextView加载HTML5内容，HtmlImageLoader+HtmlTagHandler+HtmlText等解析HTML文本和图片进行展示
+* 新闻精选：CoordinatorLayout+AppBarLayout+Toolbar+NestedScrollView实现标题栏的伸缩效果
+* JZVDPlayer扩展实现视频界面播控，资源状态释放
+* SwipeToLoadLayout 可定制化刷新布局框架。
+* 注入框架ButterKnife(黄油刀节省了人工时间成本)，快捷键快速注入View,事件监听等
+* retrofit2+rxjava+mvp等结合对业务及网络数据交换进行开发
+* FlycoTabLayout_Lib 导航页签快速集成，搭配Viewpager+Fragemnt
+* glide 图片高效配置及展示
+* Fresco FaceBook开源图片框架
+* 等
+* 其中使用的三方开源框架（后期会细化整理所有项目使用到的开源框架）
 				
 
 ####  其他板块
-		-分享app
-		-拉起QQ分享
-		-设置
-		等
+* 分享app
+* 拉起QQ分享
+* 设置
+* 等
 
 ####  后续要完成
-
-		- 新闻不同板块
-		- 频道动态定制与首页联动
-		- 视频详情
-		- 我的要闻
-		- 要闻详情预测
-		- 视频、新闻类型条目的更多功能
-		- 关注详情
-		- 用户小窝
-		- 消息推送  消息详情
-		等，敬请期待
+* 新闻不同板块
+* 频道动态定制与首页联动
+* 视频详情
+* 我的要闻
+* 要闻详情预测
+* 视频、新闻类型条目的更多功能
+* 关注详情
+* 用户小窝
+* 消息推送  消息详情
+* 等，敬请期待
 
 ####  其中使用的三方开源框架（这里部分列举，后期会细化整理所有项目使用到的开源框架）
-		  -BaseQuickAdapter
+* BaseQuickAdapter
 		  -Glide
 		  -Fresco
 		  -butterknife
@@ -118,6 +116,12 @@
 		  -xrecyclerview		  
 		  等
 		  -感谢开源，感谢项目中的开源方
+		  
+| 三方开源框架     |    用途 | 应用版本  |
+| :-------- | --------:| :--: |
+| BaseQuickAdapter  | RecyclerView适配器基类 |    |
+| Glide     |   图片加载策略 |    |
+| Fresco      |    FaceBook图片加载策略 |  |
 		  
 		  
 		  		 	
