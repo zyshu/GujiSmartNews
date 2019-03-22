@@ -1,12 +1,12 @@
 # GujiSmartNews
 
-咕唧新闻平台V1.3.0
-旨在做一款多类型阅读体验优美的新闻资讯的平台
-首页精选分类性的新闻专区，包含图文、音视频、图文、导航入口、新闻直击阅读
-可以随时随地加入新闻猜猜猜，专区内置咕唧币，更多权限，更多玩法
-专门视频专区，一次看个够
-个人中心，美观的界面，多类型，丰富的功能设计。设置分享，想看就看。
-开源只为共同学习，请勿商用。问题或者指正请EMAIL:maiduoduo0@163.com
+*******咕唧新闻平台V1.3.0*******
+###### 旨在做一款多类型阅读体验优美的新闻资讯的平台
+###### 首页精选分类性的新闻专区，包含图文、音视频、图文、导航入口、新闻直击阅读
+###### 可以随时随地加入新闻猜猜猜，专区内置咕唧币，更多权限，更多玩法
+###### 专门视频专区，一次看个够
+###### 个人中心，美观的界面，多类型，丰富的功能设计。设置分享，想看就看。
+###### 开源只为共同学习，请勿商用。问题或者指正请EMAIL:maiduoduo0@163.com
 
 
 ***目前已完成的或者正在完成功能模块有：***
@@ -117,23 +117,33 @@
 		  等
 		  -感谢开源，感谢项目中的开源方
 		  
-| 三方开源框架     |    用途 | 应用版本  |
+| 三方开源框架 | 用途 | 应用版本  |
 | :-------- | --------:| :--: |
 | BaseQuickAdapter  | RecyclerView适配器基类 |    |
 | Glide     |   图片加载策略 |    |
 | Fresco      |    FaceBook图片加载策略 |  |
+| butterknife      |    注解 |  |
+| Retrofit2.0+rxandroid+rxjava+okhttp3      |   网络处理策略 |  |
+| FlycoTabLayout      |    引导页签 |  |
+| banner      |    轮播 |  |
+| SwipeToLoadLayout      |    自定制刷新 |  |
+| jiaozivideoplayer      |    视频扩展工具 |  |
+| xrecyclerview      |    定制recyclerview |  |
+
+ 	等
+   	- 感谢开源，感谢项目中的开源方
 		  
 		  
 		  		 	
 #### 环境
-		 -AndroidStudio3.2
-			-Android Studio 3.2
-			Build #AI-181.5540.7.32.5014246, built on September 18, 2018
+		* AndroidStudio3.2
+			- Android Studio 3.2
+			    Build #AI-181.5540.7.32.5014246, built on September 18, 2018
 			JRE: 1.8.0_152-release-1136-b06 amd64
 			JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
 			Windows 10 10.0
-		-SVN
-		_gradle构建：gradle-4.6-all.zip
+		* SVN
+		* _gradle构建：gradle-4.6-all.zip
 		
   
 #### 声明
